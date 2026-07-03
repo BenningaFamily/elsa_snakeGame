@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <div id="hud" class="hidden">
+      <span>Score: <span id="score">0</span></span>
+      <span>Control: <span id="hud-mode">You</span></span>
+    </div>
+
+    <div id="stage">
+      <canvas id="board" width="320" height="320"></canvas>
+
+      <!-- Menu overlay -->
+      <div id="menu" class="overlay">
+        <h1>Snake</h1>
+
+        <div class="field">
+          <div class="field-label">Board size</div>
+          <div id="size-options" class="options"></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Speed</div>
+          <div id="speed-options" class="options"></div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Control</div>
+          <div id="control-options" class="options"></div>
+        </div>
+
+        <p class="hint">Pick a board and controller, then press <kbd>Enter</kbd>.</p>
+        <p class="hint">Steer with the arrow keys · <kbd>Esc</kbd> to quit a game.</p>
+      </div>
+
+      <!-- Game-over overlay -->
+      <div id="game-over" class="overlay hidden">
+        <h1>Game Over</h1>
+        <p class="final">Score: <span id="final-score">0</span></p>
+        <p class="hint">Press <kbd>Enter</kbd> to return to the menu.</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
