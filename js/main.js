@@ -23,7 +23,7 @@ let stepInterval = SPEEDS[DEFAULT_SPEED]; // ms per tick; set from the menu each
 
 function startGame() {
   state = new GameState(ui.selectedSize);
-  agent = createAgent(ui.selectedMode, { input });
+  agent = createAgent(ui.selectedMode, { input, size: state.size });
   agent.reset?.();
   stepInterval = SPEEDS[ui.selectedSpeed];
   resizeCanvas(canvas, ctx, state.size);

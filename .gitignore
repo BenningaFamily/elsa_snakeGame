@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ML training artifacts — regenerable checkpoints and intermediate exports.
+# (The deployed browser models live in /models and ARE committed.)
+ai/models/

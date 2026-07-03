@@ -1,0 +1,1 @@
+{"arch": "cnn-v2", "size": 12, "channels": 4, "dtype": "float32", "layers": [{"type": "conv", "shape": [32, 4, 3, 3]}, {"type": "conv", "shape": [64, 32, 3, 3]}, {"type": "pool", "k": 2}, {"type": "conv", "shape": [64, 64, 3, 3]}, {"type": "dense", "shape": [256, 2304]}, {"type": "dense", "shape": [3, 256]}], "meta": {"size": 12, "obs": "grid-v1"}}

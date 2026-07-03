@@ -1,0 +1,10 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "Classic Snake game — web app with pluggable human/random/AI controllers.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "serve": "python3 -m http.server 8000"
+  }
+}
